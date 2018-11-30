@@ -13,7 +13,7 @@ public class Application {
 	
 	@Bean
 	AMQPConnectionDetails securedAmqpConnection() {
-	  return new AMQPConnectionDetails("amqp://localhost:5672", "user", "user"); 
+	  return new AMQPConnectionDetails("amqp://broker-amq-amqp.fuse-demo.svc:5672", "amq-demo-user", "UYFaMmpp"); 
 	}
 
 	@Component
