@@ -34,7 +34,7 @@ public class Application {
                     .to("amqp:queue:threat_detected?exchangePattern=InOnly")
                     .endRest();
 
-            rest("/dms-callback").description("DMS Rest Endpoint")
+            rest("/dms-callback/dms").description("DMS Rest Endpoint")
                 .post("/")
                         .route().routeId("dms-callback")
                         .log("Received callback: ${body}")
